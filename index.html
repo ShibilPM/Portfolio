@@ -9,6 +9,8 @@
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Font awesome -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
   <!-- Custom CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -26,10 +28,19 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" href="#aboutme">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#myskills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-section">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fab fa-github"></i></a>
             </li>
         </div>
       </nav>
@@ -37,21 +48,21 @@
   </section>
 
   <!-- Header -->
-  <header class="container-fluid profile">
-      <div class="profile__name">
-        <h1>I'm Shibil.</h1>
-        <p>
-          Web Developer...
-        </p>
-        <button type="button" class="btn btn-lg btn-outline-primary">Resume>></button>
-      </div>
-      <div class="profile__image">
-        <img src="images/image1.png" alt="">
-      </div>
+  <header class="container-fluid profile" id="home">
+    <div class="profile__name">
+      <h1>I'm Shibil.</h1>
+      <p>
+        Web Developer...
+      </p>
+      <button type="button" class="btn btn-lg btn-outline-primary">Resume>></button>
+    </div>
+    <div class="profile__image">
+      <img src="images/image1.png" alt="">
+    </div>
   </header>
 
   <!-- About -->
-  <section>
+  <section id="aboutme">
     <div class="container-fluid about">
       <div class="about__img">
         <img src="images/image2.png" alt="">
@@ -59,11 +70,105 @@
       <div class="about__txt">
         <h2>About</h2>
         <p align="justify">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+          book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more
+          recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
         </p>
       </div>
     </div>
   </section>
+
+  <!-- Skills -->
+  <section id="myskills">
+    <div class="container-fluid skills">
+      <div class="skills__info">
+        <h2>My Skills</h2>
+        <ul>
+          <li>
+            <h5><i class="fab fa-html5"></i> HTML5</h5><span class="bar"><span class="html5"></span></span>
+          </li>
+          <li>
+            <h5><i class="fab fa-css3-alt"></i> CSS3</h5><span class="bar"><span class="css3"></span></span>
+          </li>
+          <li>
+            <h5><i class="fab fa-bootstrap"></i> Bootstrap</h5><span class="bar"><span class="bootstrap"></span></span>
+          </li>
+          <li>
+            <h5><i class="fab fa-js-square"></i> JavaScript</h5><span class="bar"><span class="javascript"></span></span>
+          </li>
+          <li>
+            <h5>JQuery</h5><span class="bar"><span class="jquery"></span></span>
+          </li>
+          <li>
+            <h5><i class="fab fa-node-js"></i> Node.js</h5><span class="bar"><span class="nodejs"></span></span>
+          </li>
+          <li>
+            <h5>Express</h5><span class="bar"><span class="express"></span></span>
+          </li>
+          <li>
+            <h5><i class="fab fa-git-alt"></i> Git</h5><span class="bar"><span class="git"></span></span>
+          </li>
+          <li>
+            <h5><i class="fab fa-php"></i> php</h5><span class="bar"><span class="php"></span></span>
+          </li>
+          <li>
+            <h5>SQL</h5><span class="bar"><span class="sql"></span></span>
+          </li>
+        </ul>
+      </div>
+      <div class="skills__remining">
+        <h4>Learning</h4>
+        <ul>
+          <li><i class="fab fa-react"></i> React</li>
+          <li><i class="fas fa-database"></i> MongoDB</li>
+        </ul>
+        <h4>Tools used</h4>
+        <ul>
+          <li>Adobe Xd</li>
+          <li>Atom</li>
+          <li>VS Code</li>
+        </ul>
+        <h4>Operating System</h4>
+        <ul>
+          <li><i class="fab fa-windows"></i> Windows7,8&10</li>
+          <li><i class="fab fa-ubuntu"></i> Ubuntu</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact section -->
+      <section id="contact-section">
+        <div class="container-fluid">
+          <h2>Contact Me</h2>
+          <div class="contact-form">
+
+               <!-- First grid -->
+            <div class="icons">
+              <i class="fa fa-map-marker"></i><span class="form-info">  Kasaragod, Kerala </span><br>
+              <i class="fa fa-phone" > </i><span class="form-info"> 8592064262 </span><br>
+              <i class="fa fa-envelope"></i><span class="form-info">  shibilpm3232@gmail.com </span>
+            </div>
+
+                <!-- second grid -->
+        <div>
+          <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="text" placeholder="Last Name"><br>
+            <input type="Email" placeholder="Email" required><br>
+            <input type="text" placeholder="Subject of this message"><br>
+            <textarea name="message" placeholder="Message" rows="5" required></textarea><br>
+            <button class="submit" >Send Message</button>
+          </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <p>&#169 Shibil 2021</p>
+      </footer>
 
   <!-- bootstrap -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

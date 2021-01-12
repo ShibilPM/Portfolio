@@ -4,6 +4,11 @@ body {
   box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  padding-inline-start: 0;
+}
+
 .container-fluid {
   padding: 4% 10%;
 }
@@ -12,20 +17,34 @@ body {
 .navigation {
   background-color: #ffc892;
   height: 10vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 5;
 }
 
 .navbar {
   padding: 0.5rem 0;
 }
+
 .navigation .container-fluid {
   padding-left: 10%;
   padding-right: 10%;
   padding-top: 0.4%
 }
 
+@media (max-width: 989px) {
+  .navbar-collapse {
+    background-color: #ffc892;
+    border: 1px solid;
+    border-radius: 6px;
+    margin-top: 25px;
+    text-align: center;
+  }
+}
+
 /* Header */
 .profile {
-  height: 85vh;
+  height: 95vh;
   background-color: #ffc892;
 }
 
@@ -53,34 +72,28 @@ body {
 
 @media only screen and (max-width: 840px) {
   .profile {
-    height: 80vh;
+    height: 93vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
+
   .profile__name {
     position: absolute;
-    /* text-align: center;
-    padding: auto;
-    margin: auto;
-    line-height: 1.5;
-    z-index: 2; */
     top: 15%;
     text-align: center;
     left: auto;
     right: auto;
   }
+
   .profile__image {
     position: absolute;
-    /* text-align: center;
-    margin: 0 auto 0;
-    bottom: 1rem;
-    z-index: 1; */
     top: 28%;
     left: auto;
     right: auto;
   }
+
   .profile__image img {
     width: 17rem;
   }
@@ -118,10 +131,6 @@ body {
     text-align: center;
   }
 
-  /* .about__txt {
-    width: 17rem;
-  } */
-
   .about__img {
     border: 1px solid;
     border-radius: 3px;
@@ -130,4 +139,297 @@ body {
   .about__img img {
     width: 17rem;
   }
+}
+
+/* Skills */
+.skills {
+  background-color: #ffc892;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.bar {
+  background: white;
+  display: block;
+  height: 2px;
+  border-radius: 3px;
+  width: 40%;
+}
+
+.skills__info li {
+  padding-bottom: 10px;
+  width: 50vw;
+}
+
+.skills__info h5 {
+  padding-bottom: 5px;
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: black;
+}
+
+.html5 {
+  width: 90%;
+  animation: html5 2s;
+}
+
+.css3 {
+  width: 70%;
+  animation: css3 2s;
+}
+
+.bootstrap {
+  width: 50%;
+  animation: bootstrap 2s;
+}
+
+.javascript {
+  width: 50%;
+  animation: javascript 2s;
+}
+
+.jquery {
+  width: 40%;
+  animation: jquery 2s;
+}
+
+.nodejs {
+  width: 40%;
+  animation: nodejs 2s;
+}
+
+.express {
+  width: 40%;
+  animation: express 2s;
+}
+
+.git {
+  width: 75%;
+  animation: git 2s;
+}
+
+.php {
+  width: 60%;
+  animation: php 2s;
+}
+
+.sql {
+  width: 60%;
+  animation: sql 2s;
+}
+
+@keyframes html5 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes css3 {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes bootstrap {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 50%;
+  }
+}
+
+@keyframes jquery {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes nodejs {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes express {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 40%;
+  }
+}
+
+@keyframes git {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes php {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes sql {
+  0% {
+    width: 0%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+/* Contact */
+#contact-section {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 2%;
+}
+
+#contact-section .container-fluid h2 {
+  text-align: center;
+}
+
+#contact-section .container p {
+  text-align: center;
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 3%;
+  letter-spacing: 3px;
+}
+
+.contact-form i.fa {
+  font-size: 22px;
+  padding: 3%;
+  background-color: none;
+  border-radius: 80%;
+  margin: 2%;
+  cursor: pointer;
+  border: 2px solid rgb(190, 190, 190);
+}
+
+.contact-form i.fa:hover {
+  cursor: pointer;
+  border: 2px solid;
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.form-info {
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 2px;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  background-color: rgba(136, 133, 133, 0.5);
+  border: none;
+  outline: none;
+}
+
+input::placeholder {}
+
+textarea {
+  padding: 10px;
+  margin: 10px;
+  width: 70%;
+  background-color: rgba(136, 133, 133, 0.5);
+  border: none;
+  outline: none;
+}
+
+textarea::placeholder {}
+
+.submit {
+  width: 40%;
+  background: none;
+  padding: 4px;
+  outline: none;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  height: 33px;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-left: 3%;
+  border: 2px solid rgb(190, 190, 190);
+}
+
+.submit:hover {
+  border: 1px solid;
+  cursor: pointer;
+}
+
+/* media queries */
+@media (max-width: 840px) {
+  #contact-section .contact-form {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+  #contact-section .submit {
+    width: 60%;
+  }
+  .icons {
+    text-align: left;
+    margin-left: 21px
+  }
+}
+
+/* Footer */
+footer {
+  height: 10vh;
+  text-align: center;
 }
