@@ -1,0 +1,133 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container-fluid {
+  padding: 4% 10%;
+}
+
+/* Navigation */
+.navigation {
+  background-color: #ffc892;
+  height: 10vh;
+}
+
+.navbar {
+  padding: 0.5rem 0;
+}
+.navigation .container-fluid {
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 0.4%
+}
+
+/* Header */
+.profile {
+  height: 85vh;
+  background-color: #ffc892;
+}
+
+.profile__name {
+  position: absolute;
+  top: 45%;
+  left: 15%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+.profile__name h1 {
+  font-weight: bold;
+}
+
+.profile__image img {
+  width: 25rem;
+}
+
+.profile__image {
+  position: absolute;
+  right: 15%;
+  bottom: 6rem;
+}
+
+@media only screen and (max-width: 840px) {
+  .profile {
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .profile__name {
+    position: absolute;
+    /* text-align: center;
+    padding: auto;
+    margin: auto;
+    line-height: 1.5;
+    z-index: 2; */
+    top: 15%;
+    text-align: center;
+    left: auto;
+    right: auto;
+  }
+  .profile__image {
+    position: absolute;
+    /* text-align: center;
+    margin: 0 auto 0;
+    bottom: 1rem;
+    z-index: 1; */
+    top: 28%;
+    left: auto;
+    right: auto;
+  }
+  .profile__image img {
+    width: 17rem;
+  }
+}
+
+/* About */
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__img {
+  display: inline-block;
+}
+
+.about__txt {
+  display: inline-block;
+  margin-left: 5%;
+}
+
+@media only screen and (max-width: 840px) {
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about__txt {
+    margin: 2rem auto auto;
+  }
+
+  .about__txt h2 {
+    text-align: center;
+  }
+
+  /* .about__txt {
+    width: 17rem;
+  } */
+
+  .about__img {
+    border: 1px solid;
+    border-radius: 3px;
+  }
+
+  .about__img img {
+    width: 17rem;
+  }
+}
