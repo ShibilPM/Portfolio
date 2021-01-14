@@ -9,6 +9,10 @@ ul {
   padding-inline-start: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
 .container-fluid {
   padding: 4% 10%;
 }
@@ -33,6 +37,10 @@ ul {
 }
 
 @media (max-width: 989px) {
+  .navigation {
+    height: 13vh;
+  }
+
   .navbar-collapse {
     background-color: #ffc892;
     border: 1px solid;
@@ -72,7 +80,7 @@ ul {
 
 @media only screen and (max-width: 840px) {
   .profile {
-    height: 93vh;
+    height: 130vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,18 +93,21 @@ ul {
     text-align: center;
     left: auto;
     right: auto;
+    z-index: 50;
   }
 
   .profile__image {
     position: absolute;
-    top: 28%;
+    top: 43%;
     left: auto;
     right: auto;
   }
 
   .profile__image img {
     width: 17rem;
+    z-index: 1;
   }
+
 }
 
 /* About */
@@ -143,10 +154,13 @@ ul {
 
 /* Skills */
 .skills {
-  background-color: #ffc892;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+.bgcolour {
+  background-color: #ffc892;
 }
 
 .bar {
@@ -319,6 +333,19 @@ ul {
 
   100% {
     width: 60%;
+  }
+}
+
+@media (max-width: 840px) {
+  .skills__info{
+    padding-top: 6%;
+  }
+  .bar {
+    display: none;
+  }
+  .skills__remining {
+    text-align-last: right;
+    padding-bottom: 25%;
   }
 }
 
